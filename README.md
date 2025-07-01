@@ -97,6 +97,8 @@ El proyecto siguió una metodología completa de Machine Learning supervisado, q
 
 * Selección de variables: Identificación y selección de las features más relevantes tanto numéricas como categóricas, basándose en importancia estadística y correlación.
 
+* Se aplicó tratamiento específico a las variables: escalado y transformación logarítmica en las numéricas, y codificación mediante One-Hot Encoding y Ordinal Encoding en las categóricas, garantizando así que todas fueran numéricas y aptas para el entrenamiento de modelos de Machine Learning
+
 * Entrenamiento de diferentes modelos: Comparación de algoritmos como Logistic Regression, KNN, Random Forest, LightGBM, XGBoost y Gradient Boosting.
 
 * Optimización de hiperparámetros: Uso de GridSearchCV para afinar parámetros clave en los modelos más prometedores.
