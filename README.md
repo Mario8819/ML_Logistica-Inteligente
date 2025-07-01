@@ -77,3 +77,30 @@ Reached.on.Time_Y.N, que indica si el pedido llegó a tiempo (0) o sufrió retra
 
 El dataset se obtuvo del siguiente enlace de Kaggle:
 [enlace](https://www.kaggle.com/datasets/prachi13/customer-analytics)
+
+
+## Descripción breve de la solución realizada:
+
+El proyecto siguió una metodología completa de Machine Learning supervisado, que incluyó las siguientes etapas:
+
+* Extracción y carga de datos: Importación del dataset relacionado con entregas de e-commerce.
+
+* Exploración e inspección inicial: Revisión de la estructura de los datos, detección de nulos, valores atípicos y análisis básico de las distribuciones.
+
+* Codificación de variables: Transformación de las variables categóricas mediante técnicas como One-Hot Encoding y Ordinal Encoding, según la naturaleza de cada variable.
+
+* Tratamiento de variables numéricas: Aplicación de escalado (StandardScaler) y transformaciones logarítmicas a aquellas features que lo requerían por su dispersión o sesgo.
+
+* División del conjunto de datos: Separación en train y test set, respetando el balance de clases mediante estratificación.
+
+* Mini EDA (Análisis Exploratorio de Datos): Análisis bivariante y pruebas estadísticas (como la prueba de Mann-Whitney U) para validar la relación entre variables predictoras y la variable objetivo.
+
+* Selección de variables: Identificación y selección de las features más relevantes tanto numéricas como categóricas, basándose en importancia estadística y correlación.
+
+* Entrenamiento de diferentes modelos: Comparación de algoritmos como Logistic Regression, KNN, Random Forest, LightGBM, XGBoost y Gradient Boosting.
+
+* Optimización de hiperparámetros: Uso de GridSearchCV para afinar parámetros clave en los modelos más prometedores.
+
+* Evaluación y comparación de modelos: Empleo de validación cruzada (5 folds) con la métrica Balanced Accuracy para asegurar un rendimiento equilibrado en presencia de desbalance de clases.
+
+* Selección y validación del modelo final: Elección de Gradient Boosting optimizado como el mejor modelo, evaluado finalmente en el test set con métricas como Accuracy, Recall, Precision, F1 Score, AUC, matriz de confusión y curva ROC.
