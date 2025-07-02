@@ -4,7 +4,9 @@
 
 Este proyecto de Machine Learning se centra en el desarrollo de un modelo predictivo para una empresa dedicada al e-commerce y distribución de productos.
 
-El objetivo principal es predecir con anticipación si un pedido llegará a tiempo o sufrirá retrasos, utilizando información histórica de los envíos.
+El proyecto consiste en construir un modelo de machine learning capaz de predecir si un pedido realizado en una plataforma de e-commerce llegará a tiempo o sufrirá un retraso. Esta predicción busca optimizar los procesos logísticos y reducir los costos asociados a entregas tardías, mejorando la experiencia del cliente y la eficiencia operativa.
+
+Dado que las consecuencias de un falso positivo (predecir retraso cuando no lo hay) y un falso negativo (no detectar un retraso real) pueden afectar de manera distinta al negocio, se ha decidido optimizar la métrica F1, ya que permite equilibrar precisión y exhaustividad en la predicción de entregas con retraso.
 
 ## Contexto del problema:
 
